@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
-import collections
-import json
 import os
-
+import json
 import requests
+from flask_cors import CORS
 from bs4 import BeautifulSoup
 from flask import Flask, jsonify, g
-from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
